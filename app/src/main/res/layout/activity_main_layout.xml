@@ -6,101 +6,122 @@
     <TextView
         android:id="@+id/tv_OutputText"
         style="@style/tv_OutputText"
+        android:text="@string/tv_OutputText"
         tools:text="0"/>
 
     <LinearLayout android:id="@+id/ll_First"
         style="@style/ll_Linear">
         <Button
+            android:id="@+id/btn_OperateAC"
             style="@style/btn_Operate"
-            android:text="AC"
+            android:text="@string/btn_OperateAC"
             tools:text="AC"/>
         <Button
+            android:id="@+id/btn_OperateSign"
             style="@style/btn_Operate"
-            android:text="+/-"
+            android:text="@string/btn_OperateSign"
             tools:text="+/-"/>
         <Button
+            android:id="@+id/btn_OperatePercent"
             style="@style/btn_Operate"
-            android:text="%"
+            android:text="@string/btn_OperatePercent"
             tools:text="%"/>
         <Button
+            android:id="@+id/btn_OperateDivision"
             style="@style/btn_Operate"
-            android:text="/"
+            android:text="@string/btn_OperateDivision"
             tools:text="/"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/ll_Second"
         style="@style/ll_Linear">
         <Button
+            android:id="@+id/btn_Operand7"
             style="@style/btn_Operand"
-            android:text="7"
-            tools:text="7"/>
+            android:text="@string/btn_Operand7"
+            tools:text="7"
+            android:singleLine="false" />
         <Button
+            android:id="@+id/btn_Operand8"
             style="@style/btn_Operand"
-            android:text="8"
+            android:text="@string/btn_Operand8"
             tools:text="8"/>
         <Button
+            android:id="@+id/btn_Operand9"
             style="@style/btn_Operand"
-            android:text="9"
+            android:text="@string/btn_Operand9"
             tools:text="9"/>
         <Button
+            android:id="@+id/btn_OperateMultiplication"
             style="@style/btn_Operate"
-            android:text="X"
+            android:text="@string/btn_OperateMultiplication"
             tools:text="X"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/ll_Third"
         style="@style/ll_Linear">
         <Button
+            android:id="@+id/btn_Operand4"
             style="@style/btn_Operand"
-            android:text="4"
+            android:text="@string/btn_Operand4"
             tools:text="4"/>
         <Button
+            android:id="@+id/btn_Operand5"
             style="@style/btn_Operand"
-            android:text="5"
+            android:text="@string/btn_Operand5"
             tools:text="5"/>
         <Button
+            android:id="@+id/btn_Operand6"
             style="@style/btn_Operand"
-            android:text="6"
+            android:text="@string/btn_Operand6"
             tools:text="6"/>
         <Button
+            android:id="@+id/btn_OperateSubtraction"
             style="@style/btn_Operate"
-            android:text="-"
+            android:text="@string/btn_OperateSubtraction"
             tools:text="-"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/ll_Fourth"
         style="@style/ll_Linear">
         <Button
+            android:id="@+id/btn_Operand1"
             style="@style/btn_Operand"
-            android:text="1"
+            android:text="@string/btn_Operand1"
             tools:text="1"/>
         <Button
+            android:id="@+id/btn_Operand2"
             style="@style/btn_Operand"
-            android:text="2"
+            android:text="@string/btn_Operand2"
             tools:text="2"/>
         <Button
+            android:id="@+id/btn_Operand3"
             style="@style/btn_Operand"
-            android:text="3"
+            android:text="@string/btn_Operand3"
             tools:text="3"/>
         <Button
+            android:id="@+id/btn_OperateAddition"
             style="@style/btn_Operate"
-            android:text="+"
+            android:text="@string/btn_OperateAddition"
             tools:text="+"/>
     </LinearLayout>
 
     <LinearLayout android:id="@+id/ll_Fifth"
         style="@style/ll_Linear">
         <Button
-            style="@style/btn_OperandZERO"
-            android:text="0"
+            android:id="@+id/btn_Operand0"
+            style="@style/btn_OperandZero"
+            android:text="@string/btn_Operand0"
             tools:text="0"/>
         <Button
-            style="@style/btn_OperandDOT"
-            android:text="."
+            android:id="@+id/btn_OperandDot"
+            style="@style/btn_OperandDot"
+            android:text="@string/btn_OperandDot"
             tools:text="."/>
         <Button
+            android:id="@+id/btn_OperateAnswers"
             style="@style/btn_OperateAnswers"
-            android:text="="
+            android:text="@string/btn_OperateAnswers"
             tools:text="="/>
     </LinearLayout>
 

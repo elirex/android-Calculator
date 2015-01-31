@@ -1,19 +1,34 @@
 package com.elirex.mvccalculator;
 
+import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.elirex.mvccalculator.view.CalculatorInputView;
+import com.elirex.mvccalculator.view.CalculatorOutputView;
+import com.elirex.mvccalculator.view.CalculatorInputView.InputHappend;
+
+import java.util.ArrayList;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements InputHappend {
+
+    private CalculatorInputView _CIV;
+    private CalculatorOutputView _COV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_layout);
-    }
 
+        _CIV = new CalculatorInputView(this,this);
+        _COV = new CalculatorOutputView(this);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,7 +48,16 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void operandIn(String operand) {
+        _COV.outputData(operand);
+    }
+
+    @Override
+    public void operateIn(String operate) {
+        _COV.outputData(operate);
     }
 }
