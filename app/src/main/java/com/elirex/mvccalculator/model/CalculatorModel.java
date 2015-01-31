@@ -1,5 +1,7 @@
 package com.elirex.mvccalculator.model;
 
+import android.util.Log;
+
 import com.elirex.mvccalculator.Interfaces.ICalculator;
 
 import java.util.Stack;
@@ -8,6 +10,8 @@ import java.util.Stack;
  * Created by Sheng on 15/1/31.
  */
 public class CalculatorModel implements ICalculator {
+
+    private static String LOG_TAG = "Model";
 
     private Stack<String> _DataStack = new Stack<String>();
     private boolean _IsOperate = false;
@@ -23,11 +27,11 @@ public class CalculatorModel implements ICalculator {
         if(tmpOperate.equals("+")) {
             tmpResult = calculate(stack) + tmpOperand;
         } else if(tmpOperate.equals("-")) {
-            tmpResult = calculate(stack) + tmpOperand;
-        } else if(tmpOperate.equals("*")) {
-            tmpResult = calculate(stack) + tmpOperand;
+            tmpResult = calculate(stack) - tmpOperand;
+        } else if(tmpOperate.equals("X")) {
+            tmpResult = calculate(stack) * tmpOperand;
         } else if(tmpOperate.equals("/")) {
-            tmpResult = calculate(stack) + tmpOperand;
+            tmpResult = calculate(stack) / tmpOperand;
         }
         return tmpResult;
     }
@@ -46,6 +50,7 @@ public class CalculatorModel implements ICalculator {
         }
         if(operate.equals("=")) {
             tmpResult = calculate(_DataStack);
+            _DataStack.add(String.valueOf(tmpResult));
         } else {
             Stack<String> tmpStack = (Stack<String>) _DataStack.clone();
             tmpResult = calculate(tmpStack);
