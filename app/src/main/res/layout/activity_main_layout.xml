@@ -1,11 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ll_MainBody"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_OutputText"
+        style="@style/tv_OutputText"
+        tools:text="0"/>
+
+    <LinearLayout android:id="@+id/ll_First"
+        style="@style/ll_Linear">
+        <Button
+            style="@style/btn_Operate"
+            android:text="AC"
+            tools:text="AC"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="+/-"
+            tools:text="+/-"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="%"
+            tools:text="%"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="/"
+            tools:text="/"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_Second"
+        style="@style/ll_Linear">
+        <Button
+            style="@style/btn_Operand"
+            android:text="7"
+            tools:text="7"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="8"
+            tools:text="8"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="9"
+            tools:text="9"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="X"
+            tools:text="X"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_Third"
+        style="@style/ll_Linear">
+        <Button
+            style="@style/btn_Operand"
+            android:text="4"
+            tools:text="4"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="5"
+            tools:text="5"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="6"
+            tools:text="6"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="-"
+            tools:text="-"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_Fourth"
+        style="@style/ll_Linear">
+        <Button
+            style="@style/btn_Operand"
+            android:text="1"
+            tools:text="1"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="2"
+            tools:text="2"/>
+        <Button
+            style="@style/btn_Operand"
+            android:text="3"
+            tools:text="3"/>
+        <Button
+            style="@style/btn_Operate"
+            android:text="+"
+            tools:text="+"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_Fifth"
+        style="@style/ll_Linear">
+        <Button
+            style="@style/btn_OperandZERO"
+            android:text="0"
+            tools:text="0"/>
+        <Button
+            style="@style/btn_OperandDOT"
+            android:text="."
+            tools:text="."/>
+        <Button
+            style="@style/btn_OperateAnswers"
+            android:text="="
+            tools:text="="/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- Init layout setting
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
 
     <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
+-->

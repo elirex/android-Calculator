@@ -5,4 +5,57 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="ll_MainBody">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/bg_MainBody</item>
+    </style>
+
+    <style name="tv_OutputText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/bg_OutputText</item>
+        <item name="android:textSize">72sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="ll_Linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="btn_Operand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">70sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="btn_Operate" parent="btn_Operand">
+        <item name="android:background">@color/org</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="btn_OperandZERO" parent="btn_Operand">
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="btn_OperandDOT" parent="btn_Operand">
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="btn_OperateAnswers" parent="btn_Operate">
+        <item name="android:layout_weight">3</item>
+    </style>
+
 </resources>
